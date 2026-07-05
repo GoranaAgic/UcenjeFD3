@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid black;
+     padding: 10px;
+}
+
+.p1{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.sredina{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.p2{
+    width: 120px;
+    height: 500px;
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p4{
+    width: 120px;
+    height: 500px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glavni{
+    flex: 1;
+    border: 2px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.s1{
+    background-color: gold;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    margin-top: 120px;
+}
+
+.donji{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 120px;
+}
+
+.s2{
+    flex: 1;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin-top: 300px;
+}
+
+.s3{
+    flex: 1;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin-top: 300px;
+}
+
+.p5{
+    background-color: limegreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
