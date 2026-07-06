@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo span{
+    color: greenyellow;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: greenyellow;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/teretana-bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1{
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.btn-main{
+    background-color: greenyellow;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-main:hover{
+    background-color: greenyellow;
+    transform: scale(1.05);
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    color: greenyellow;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2 ::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto 0 auto;
+}
+
+section{
+    padding: 60px 8%;
+}
+
+.services-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+card{
+    background-color: black;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    border-top: 4px solid transparent;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.card:hover{
+    border-top: 4px solid greenyellow;
+    transform: translate(-5px);
+}
+
+.card h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p{
+    color: gray;
+    font-size: 14px;
+}
+
+.subtitle{
+    text-align: center;
+    color: gray;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    margin-top: 20px;
+}
+
+th{
+    background-color: greenyellow;
+    color:black;
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+}
+
+td{
+    padding: 15px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+
+tr:hover td{
+    background-color: black;
+}
+
+.video-section{
+    background-color: black;
+}
+
+.video-container{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.contact-container{
+    display: flex;
+    gap: 50px;
+}
+
+contact-info, .contact-form{
+    flex: 1;
+}
+
+.contact-info h3{
+ margin-bottom: 15px;
+    color: white;
+}
+
+.contact-info p {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    border: 1px solid brown;
+    color: white;
+    border-radius: 4px;
+}
+
+.contact-form input:focus, 
+.contact-form select:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: greenyellow;
+}
+
+.contact-form button {
+    background-color: greenyellow;
+    color: black;
+    padding: 14px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: grey;
+    border-top: 1px solid black;
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: greenyellow;
+}
+
+
+   
