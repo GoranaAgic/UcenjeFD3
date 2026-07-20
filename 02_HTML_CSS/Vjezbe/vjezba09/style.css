@@ -1,0 +1,73 @@
+body{
+    background-color: antiquewhite;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.kutija {
+    border: 3px solid red;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-a { grid-area: A; }
+.panel-b { grid-area: B; }
+.panel-c { grid-area: C; }
+.panel-d { grid-area: D; }
+.panel-e { grid-area: E; }
+.panel-f { grid-area: F; }
+
+.layout-grid {
+    display: grid;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+    .layout-grid {
+        grid-template-areas:
+            "C"
+            "D"
+            "E";
+    }
+
+    .panel-a, .panel-b, .panel-f { display: none; }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .layout-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "B B"
+        "C F";
+        }
+        .panel-b, .panel-c, .panel-f { display: flex; }
+    .panel-a, .panel-d, .panel-e { display: none; }
+}
+
+@media (min-width: 1025px) {
+    .layout-grid {
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-areas:
+        "A B B"
+        "C D E"
+        "F F F";
+        }
