@@ -111,7 +111,7 @@ if(prim){
       // ružanedoodenažur
 
       let p = ''
-
+debugger
       for(let i=0; i< a.length; i++){
         if(a[i] !== ' '){
           p += a[i].toLocaleUpperCase()
@@ -120,7 +120,7 @@ if(prim){
 
       let palindrom = true
 
-      for(let i = 0; p.length / 2; i++){
+      for(let i = 0; i< p.length / 2; i++){
         if(p[i] !==p[p.length - 1 - i]){
           palindrom = false
           break
